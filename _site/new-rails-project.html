@@ -1,0 +1,88 @@
+<h2>Commands only<a class="anchor" id="Commands-only" href="#Commands-only"></a></h2>
+
+<p><code>Replace</code>**<code>project-name</code>**<code>with the project name in lowercase and without spaces</code></p>
+
+<div class="highlight"><pre><span class="n">mkdir</span> <span class="n">project</span><span class="o">-</span><span class="n">name</span>
+
+<span class="n">rvm</span> <span class="n">get</span> <span class="n">stable</span> <span class="p">;:</span> <span class="n">Update</span> <span class="n">RVM</span>
+<span class="n">rvm</span> <span class="n">list</span> <span class="n">known</span> <span class="p">;:</span> <span class="n">ruby</span><span class="o">-</span><span class="mf">1.9</span><span class="p">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p374</span> <span class="n">is</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">at</span> <span class="n">the</span> <span class="n">time</span> <span class="n">of</span> <span class="n">this</span> <span class="n">writing</span>
+
+<span class="p">;:</span> <span class="n">Exit</span> <span class="n">by</span> <span class="n">typing</span> <span class="p">:</span><span class="n">q</span> <span class="p">(</span><span class="n">colon</span> <span class="n">and</span> <span class="n">quit</span><span class="p">)</span>
+
+<span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="n">project</span><span class="o">-</span><span class="n">name</span><span class="o">/</span><span class="p">.</span><span class="n">rvmrc</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span>
+<span class="n">rvm</span> <span class="n">use</span> <span class="o">--</span><span class="n">create</span> <span class="o">--</span><span class="n">install</span> <span class="mf">1.9</span><span class="p">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p374</span><span class="p">@</span><span class="n">project</span><span class="o">-</span><span class="n">name</span>
+<span class="n">EOF</span>
+
+<span class="n">cd</span> <span class="n">project</span><span class="o">-</span><span class="n">name</span>
+
+<span class="p">;:</span> <span class="n">Press</span> <span class="n">y</span> <span class="n">on</span> <span class="n">your</span> <span class="n">keyboard</span> <span class="n">when</span> <span class="n">prompted</span>
+
+<span class="n">gem</span> <span class="n">install</span> <span class="n">rails</span>
+<span class="n">rails</span> <span class="n">new</span> <span class="p">.</span> <span class="o">-</span><span class="n">d</span> <span class="n">postgresql</span> 
+<span class="n">bundle</span> <span class="n">install</span>
+<span class="n">rails</span> <span class="n">s</span> <span class="p">;:</span> <span class="n">Test</span> <span class="n">run</span><span class="p">,</span> <span class="n">just</span> <span class="n">to</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">everything</span> <span class="n">is</span> <span class="n">running</span>
+
+<span class="p">;:</span> <span class="n">Press</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">c</span> <span class="n">to</span> <span class="n">close</span> <span class="n">the</span> <span class="n">server</span>
+
+<span class="n">git</span> <span class="n">init</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">github</span><span class="o">/</span><span class="n">gitignore</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">Rails</span><span class="p">.</span><span class="n">gitignore</span> <span class="o">-</span><span class="n">O</span> <span class="p">.</span><span class="n">gitignore</span>
+<span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> "<span class="n">Initial</span> <span class="n">commit</span>"
+</pre></div>
+
+<h2>Long version<a class="anchor" id="Long-version" href="#Long-version"></a></h2>
+
+<ul><li>  Create your project's new directory: <code>mkdir project-name</code> (make directory)</li>
+<li>  Find the latest ruby version at <a href="http://www.ruby-lang.org/en/downloads/">ruby-lang.org</a> or by updating <a class="internal present" href="/rvm.html">RVM</a> and getting the latest known list: <code>rvm get stable &amp;&amp; rvm list known</code> (Type <em><code>:q</code></em> to exit). At the time of this writing: ruby 1.9.3-p374</li>
+<li>  Create a .rvmrc file in the newly created directory. This will (1) install "ruby-1.9.3-p374" if necessary, (2) create the gemset "project-name" if necessary and (3) select this gemset when <code>cd project-name</code> (change directory). <strong>TIP</strong>: You can always  know what ruby/gemset is being used by typing <code>rvm current</code>.</li>
+</ul><div class="highlight"><pre><span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="n">project</span><span class="o">-</span><span class="n">name</span><span class="o">/</span><span class="p">.</span><span class="n">rvmrc</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span>
+<span class="n">rvm</span> <span class="n">use</span> <span class="o">--</span><span class="n">create</span> <span class="o">--</span><span class="n">install</span> <span class="mf">1.9</span><span class="p">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p374</span><span class="p">@</span><span class="n">project</span><span class="o">-</span><span class="n">name</span>
+<span class="n">EOF</span>
+</pre></div>
+
+<ul><li>  Open the project's directory: <code>cd project-name</code>. The first time you <code>cd</code> inside a folder after the ".rvmrc" file has been changed you will have to accept the changes. Type: <em><code>[y]</code></em> when prompted.</li>
+<li>  Install Ruby on Rails: <code>gem install rails</code></li>
+<li>  Create a new Ruby on Rails project: <code>rails new . -d postgresql</code></li>
+<li>  Type <code>bundle</code></li>
+<li>  Run <code>rails s</code> once and visit <em>http://localhost:3000</em> on your browser, if you see the "Welcome aboard" page, you are doing everything right.</li>
+<li>  Kill the server: <em><code>[Control + c]</code></em></li>
+<li>  Initialize/start a new git repository: <code>git init</code></li>
+<li>  Replace the contents of .gitignore with the contents of <a href="https://raw.github.com/github/gitignore/master/Rails.gitignore">Rails.gitignore</a>: <code>wget https://raw.github.com/github/gitignore/master/Rails.gitignore -O .gitignore</code></li>
+<li>  Add all the files to the commit: <code>git add .</code>. This is the <em>LAST TIME</em> we are using this command, forget it now. From know on, you will only add specific files to each commit.</li>
+<li>  Commit the initial commit: <code>git commit -m "Initial Commit"</code></li>
+</ul><h2>Cleanup and final setup<a class="anchor" id="Cleanup-and-final-setup" href="#Cleanup-and-final-setup"></a></h2>
+
+<p><strong>No skipping in this section, everything is important</strong></p>
+
+<p>Will remove unnecessary comments, lock the Gemfile with the <a href="http://docs.rubygems.org/read/chapter/16#page74">pessimistic version constraint</a>.</p>
+
+<h3>Gemfile<a class="anchor" id="Gemfile" href="#Gemfile"></a></h3>
+
+<ul><li>  Remove all comments/examples</li>
+<li>  Lock the "pg" gem's version:</li>
+</ul><div class="highlight"><pre><span class="n">gem</span> <span class="s">'pg'</span><span class="p">,</span> <span class="s">'~&gt; 0.14.1'</span>
+</pre></div>
+
+<ul><li>Add "foreman" and "thin":</li>
+</ul><div class="highlight"><pre><span class="n">gem</span> <span class="s">'foreman'</span><span class="p">,</span> <span class="s">'~&gt; 0.61'</span>
+<span class="n">gem</span> <span class="s">'thin'</span><span class="p">,</span> <span class="s">'~&gt; 1.5.0'</span>
+</pre></div>
+
+<ul><li>  Create a "Procfile": <code>web: bundle exec rails server thin -p $PORT -e $RACK_ENV" &gt;&gt; Procfile</code></li>
+<li>  Make "development" your default $RACK_ENV and 3000 your default port. Type <code>echo "RACK_ENV=development\nPORT=3000" &gt;&gt;.env</code></li>
+<li>  Load ".env" in the current session: <code>source .env</code></li>
+<li>  Execute <code>bundle</code></li>
+<li>  Test your setup, run <code>foreman start</code> and visit <em>http://localhost:3000</em> in your browser. As usual, kill the server by typing <code>[Control + c]</code></li>
+<li>  Commit your changes: <code>git add Gemfile Gemfile.lock Procfile .env</code> and <code>git commit -m "Foreman and thin"</code></li>
+</ul><h3>Routes<a class="anchor" id="Routes" href="#Routes"></a></h3>
+
+<ul><li>  Remove all comments/examples except:</li>
+</ul><div class="highlight"><pre><span class="c">#   resources :products</span>
+</pre></div>
+
+<div class="highlight"><pre><span class="c"># root :to =&gt; 'welcome#index'</span>
+</pre></div>
+
+<ul><li>  Replace <code>root :to =&gt; 'welcome#index'</code> for <code>root to: 'welcome#index'</code>, it is the nicer (ruby 1.9.x) syntax will be using.</li>
+<li>  Commit: <code>git add config/routes.rb</code> and <code>git commit -m "Routes cleanup"</code></li>
+</ul>

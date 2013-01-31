@@ -1,0 +1,20 @@
+<h2>Installation<a class="anchor" id="Installation" href="#Installation"></a></h2>
+
+<p>Follow the instructions at <a href="https://rvm.io/rvm/install/">rvm.io/rvm/install</a></p>
+
+<h2>Get latest ruby<a class="anchor" id="Get-latest-ruby" href="#Get-latest-ruby"></a></h2>
+
+<p>Update RVM (<code>rvm get stable</code>) and find the latest stable ruby (<code>rvm list known</code>), by looking at the patch number just before head:</p>
+
+<div class="highlight"><pre><span class="c">...</span>
+<span class="p">[</span><span class="n">ruby</span><span class="o">-</span><span class="p">]</span><span class="mf">1.9</span><span class="p">.</span><span class="mi">3</span><span class="p">[</span><span class="o">-</span><span class="n">p374</span><span class="p">]</span>
+<span class="p">[</span><span class="n">ruby</span><span class="o">-</span><span class="p">]</span><span class="mf">1.9</span><span class="p">.</span><span class="mi">3</span><span class="o">-</span><span class="n">head</span>
+<span class="c">...</span>
+</pre></div>
+Or visit <a href="http://www.ruby-lang.org/en/downloads/">http://www.ruby-lang.org/en/downloads/</a> and find the version that says "Stable (recommended)"
+
+<p>1.9.3-p374 is the latest at the time of this writing.</p>
+
+<h2>Manually mark a .rvmrc file as trusted<a class="anchor" id="Manually-mark-a-.rvmrc-file-as-trusted" href="#Manually-mark-a-.rvmrc-file-as-trusted"></a></h2>
+
+<p><code>cd</code> inside the directory and run <code>rvm rvmrc trust</code>. This is useful when a .rvmrc was marked as untrusted previously and RVM remember this decision, so no prompt is shown afterwards.</p>
