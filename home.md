@@ -2,4 +2,4 @@
 
 ## Ruby and Rails
 
-* [New Rails Project]
+* [[New Rails Project]]
