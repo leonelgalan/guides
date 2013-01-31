@@ -1,1 +1,1 @@
-web: bundle exec gollum-site serve
+web: bundle exec gollum-site serve -p $PORT
