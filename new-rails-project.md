@@ -34,7 +34,7 @@ git commit -m "Initial commit"
 ## Long version
 
 *	Create your project's new directory: `mkdir project-name` (make directory)
-*	Find the latest ruby version at [ruby-lang.org](http://www.ruby-lang.org/en/downloads/) or by updating [[RVM]] and getting the latest known list: `rvm get stable && rvm list known` (Type _`:q`_ to exit). At the time of this writing: ruby 1.9.3-p374
+*	Find the latest ruby version at [ruby-lang.org](http://www.ruby-lang.org/en/downloads/) or by updating [RVM](rvm.md) and getting the latest known list: `rvm get stable && rvm list known` (Type _`:q`_ to exit). At the time of this writing: ruby 1.9.3-p374
 *	Create a .rvmrc file in the newly created directory. This will (1) install "ruby-1.9.3-p374" if necessary, (2) create the gemset "project-name" if necessary and (3) select this gemset when `cd project-name` (change directory). **TIP**: You can always 	know what ruby/gemset is being used by typing `rvm current`.
 	
 ```

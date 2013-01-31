@@ -3,4 +3,4 @@
 ## Ruby and Rails
 
 * [RVM.md](rvm.md)
-* [[New Rails Project]]
+* [New Rails Project](new-rails-project.md)
