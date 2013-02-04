@@ -73,7 +73,7 @@ gem 'pg', '~> 0.14.1'
 gem 'foreman', '~> 0.61'
 gem 'thin', '~> 1.5.0'
 ```
-*	Create a "Procfile": `web: bundle exec rails server thin -p $PORT -e $RACK_ENV" >> Procfile`
+*	Create a "Procfile": `echo "web: bundle exec rails server thin -p $PORT -e $RACK_ENV" >> Procfile`
 *	Make "development" your default $RACK_ENV and 3000 your default port. Type `echo "RACK_ENV=development\nPORT=3000" >>.env`
 *	Load ".env" in the current session: `source .env`
 *	Execute `bundle`
