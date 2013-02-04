@@ -19,8 +19,8 @@ cd project-name
 ;: Press y on your keyboard when prompted
 
 gem install rails
-rails new . -d postgresql 
-bundle install
+rails new . -T -d postgresql 
+bundle
 rails s ;: Test run, just to make sure everything is running
 
 ;: Press Ctrl+c to close the server
