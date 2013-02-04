@@ -78,7 +78,7 @@ gem 'thin', '~> 1.5.0'
 *	Load ".env" in the current session: `source .env`
 *	Execute `bundle`
 *	Test your setup, run `foreman start` and visit _http://localhost:3000_ in your browser. As usual, kill the server by typing `[Control + c]`
-*	Commit your changes: `git add Gemfile Gemfile.lock Procfile .env` and `git commit -m "Foreman and thin"`
+*	Commit your changes: `git add Gemfile Gemfile.lock config/routes.rb Procfile .env` and `git commit -m "Foreman and thin"`
 
 ### Routes
 *	Remove all comments/examples except:
