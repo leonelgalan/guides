@@ -16,7 +16,9 @@ Update RVM (`rvm get stable`) and find the latest stable ruby 1.9.3 (`rvm list k
 Or visit [http://www.ruby-lang.org/en/downloads/](http://www.ruby-lang.org/en/downloads/) and find the version that says "Stable (recommended)"
 
 Or get it in a "single command" by typing this in your console:
-`curl 'http://ftp.ruby-lang.org/pub/ruby/1.9/' 2> /dev/null | ruby -e 'puts STDIN.lines.map { |x| /1\.9\.3-p\d+\b/.match(x) }.compact.last[0]'`
+```
+curl 'http://ftp.ruby-lang.org/pub/ruby/1.9/' 2> /dev/null | ruby -e 'puts STDIN.lines.map { |x| /1\.9\.3-p\d+\b/.match(x) }.compact.last[0]'
+```
 
 1.9.3-p392 is the latest at the time of this writing.
 
