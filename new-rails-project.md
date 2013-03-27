@@ -19,8 +19,8 @@ cd project-name
 ;: Press y on your keyboard when prompted
 
 gem install rails
-rails new . -d postgresql 
-bundle install
+rails new . -T -d postgresql 
+bundle
 rails s ;: Test run, just to make sure everything is running
 
 ;: Press Ctrl+c to close the server
@@ -73,12 +73,12 @@ gem 'pg', '~> 0.14.1'
 gem 'foreman', '~> 0.61'
 gem 'thin', '~> 1.5.0'
 ```
-*	Create a "Procfile": `web: bundle exec rails server thin -p $PORT -e $RACK_ENV" >> Procfile`
+*	Create a "Procfile": `echo "web: bundle exec rails server thin -p $PORT -e $RACK_ENV" >> Procfile`
 *	Make "development" your default $RACK_ENV and 3000 your default port. Type `echo "RACK_ENV=development\nPORT=3000" >>.env`
 *	Load ".env" in the current session: `source .env`
 *	Execute `bundle`
 *	Test your setup, run `foreman start` and visit _http://localhost:3000_ in your browser. As usual, kill the server by typing `[Control + c]`
-*	Commit your changes: `git add Gemfile Gemfile.lock Procfile .env` and `git commit -m "Foreman and thin"`
+*	Commit your changes: `git add Gemfile Gemfile.lock config/routes.rb Procfile .env` and `git commit -m "Gemfile and routes.rb cleanup, Foreman and Thin"`
 
 ### Routes
 *	Remove all comments/examples except:
