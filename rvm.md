@@ -9,7 +9,7 @@ Update RVM (`rvm get stable`) and find the latest stable ruby 1.9.3 (`rvm list k
 
 ```
 ...
-[ruby-]1.9.3[-p392]
+[ruby-]1.9.3[-p429]
 [ruby-]1.9.3-head
 ...
 ```
@@ -20,10 +20,10 @@ Or get it in a "single command" by typing this in your console:
 curl 'http://ftp.ruby-lang.org/pub/ruby/1.9/' 2> /dev/null | ruby -e 'puts STDIN.lines.map { |x| /1\.9\.3-p\d+\b/.match(x) }.compact.last[0]'
 ```
 
-1.9.3-p392 is the latest at the time of this writing.
+1.9.3-p429 is the latest at the time of this writing.
 
 ```
-rvm install 1.9.3-p392
+rvm install 1.9.3-p429
 ```
 
 ## .ruby-version and .ruby-gemset instead of .rvmrc
@@ -33,13 +33,13 @@ Read more about this in [wayneeseguin/rvm#1517](https://github.com/wayneeseguin/
 
 ```
 # Replace existing .rvmrc
-ruby-1.9.3-p392@rails-app
+ruby-1.9.3-p429@ruby-app
 
 # With .ruby-version
-ruby-1.9.3-p392
+ruby-1.9.3-p429
 
 # and .ruby-gemset
-rails-app
+ruby-app
 ```
 
 ## Manually mark a .rvmrc file as trusted
