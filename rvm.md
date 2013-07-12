@@ -5,25 +5,25 @@ A GCC compiler is needed to compile Ruby. The easiest way to  get it on Mac is t
 Follow the instructions at [rvm.io/rvm/install](https://rvm.io/rvm/install/).
 
 ## Get latest ruby
-Update RVM (`rvm get stable`) and find the latest stable ruby 1.9.3 (`rvm list known`, type `:q` to exit), by looking at the patch number just before head:
+Update RVM (`rvm get stable`) and find the latest stable ruby 2.0.0 (`rvm list known`, type `:q` to exit), by looking at the patch number just before head:
 
 ```
 ...
-[ruby-]1.9.3[-p429]
-[ruby-]1.9.3-head
+[ruby-]2.0.0[-p247]
+[ruby-]2.0.0-head
 ...
 ```
 Or visit [http://www.ruby-lang.org/en/downloads/](http://www.ruby-lang.org/en/downloads/) and find the version that says "Stable (recommended)"
 
 Or get it in a "single command" by typing this in your console:
 ```
-curl 'http://ftp.ruby-lang.org/pub/ruby/1.9/' 2> /dev/null | ruby -e 'puts STDIN.lines.map { |x| /1\.9\.3-p\d+\b/.match(x) }.compact.last[0]'
+curl 'http://ftp.ruby-lang.org/pub/ruby/2.0/' 2> /dev/null | ruby -e 'puts STDIN.each_line.map { |x| /2\.0\.0-p\d+\b/.match(x) }.compact.last[0]'
 ```
 
-1.9.3-p429 is the latest at the time of this writing.
+2.0.0-p247 is the latest at the time of this writing.
 
 ```
-rvm install 1.9.3-p429
+rvm install 2.0.0-p247
 ```
 
 ## .ruby-version and .ruby-gemset instead of .rvmrc
@@ -33,12 +33,12 @@ Read more about this in [wayneeseguin/rvm#1517](https://github.com/wayneeseguin/
 
 ```
 # Replace existing .rvmrc
-ruby-1.9.3-p429@ruby-app
+ruby-2.0.0-p247@ruby-app
 
 # With .ruby-version
-ruby-1.9.3-p429
+ruby-2.0.0-p247
 
-# and .ruby-gemset
+# and .ruby-gemset. I no longer recommend the use of gemsets, so you can skip this file and use bundler instead
 ruby-app
 ```
 
