@@ -39,5 +39,6 @@ ninja (1.1.0 < 1.3.4)
  Upgrade `ninja` by typing `brew upgrade ninja`
 
  ## Don't
+ 
  * Run `brew upgrade`, alone without parameters it will upgrade all your kegs!
 
