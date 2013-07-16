@@ -1,6 +1,11 @@
 # leonelgalan/guides
+## Setup
+* [.Files](dot-files.md)
+* [Homebrew](homebrew.md)
 
-## Ruby and Rails
+## Git
+* [Git](git.md)
 
+## Ruby
+* [rbenv](rbenv.md)
 * [RVM](rvm.md)
-* [New Rails Project](new-rails-project.md)
