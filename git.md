@@ -8,7 +8,7 @@ I strongly recommend you read a couple of chapters (1-3) of [Pro Git](http://git
 
 Getting an existing repo on your computer:
 
-```
+```sh
 git clone git@github.com:rails/rails.git
 ```
 
@@ -20,17 +20,17 @@ Avoid using **https** addresses when cloning. If you do this, you will be promot
 
 You can have multiple remotes per repository (e.g., github/heroku, github/bitbucket, etc.)
 
-```
+```sh
 git remote add heroku git@heroku.com:enigmatic-river.git
 ```
 You can see all your remotes by typing
 
-```
+```sh
 git remote -v
 ```
 #### Pull and Push
 
-```
+```sh
 git pull origin master
 git push origin master
 ```

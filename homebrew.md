@@ -22,12 +22,13 @@ brew doctor
 ```sh
 brew update
 brew doctor
+
 brew install git
 ```
 
 Periodically run `brew outdated` to see what goodies (new versions) are you missing
 
-```
+```sh
 brew outdated
 ...
 ninja (1.1.0 < 1.3.4)
