@@ -2,7 +2,15 @@
 
 * An Intel CPU
 * OS X 10.5 or higher
-* [Command Line Tools for Xcode](https://developer.apple.com/downloads) or [Xcode](http://itunes.apple.com/us/app/xcode/id497799835)
+* [Xcode](http://itunes.apple.com/us/app/xcode/id497799835) (~1.5 GB)
+* or [Command Line Tools for Xcode](https://developer.apple.com/downloads) (~100 MB)
+  * `sudo xcode-select -switch /usr/bin` (http://stackoverflow.com/a/11729126/637094)
+  * Replace `/usr/bin/xcrun` with (http://stackoverflow.com/q/13041525/637094):
+
+```bash
+#!/bin/bash
+$@
+```
 
 Read the [longer instructions at Homebrew Github Wiki](https://github.com/mxcl/homebrew/wiki/Installation)
 
