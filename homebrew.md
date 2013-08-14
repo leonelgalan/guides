@@ -5,7 +5,7 @@
 * [Xcode](http://itunes.apple.com/us/app/xcode/id497799835) (~1.5 GB)
 * or [Command Line Tools for Xcode](https://developer.apple.com/downloads) (~100 MB)
   * `sudo xcode-select -switch /usr/bin` (http://stackoverflow.com/a/11729126/637094)
-  * Replace `/usr/bin/xcrun` with (http://stackoverflow.com/q/13041525/637094):
+  * Replace `/usr/bin/xcrun` with (http://stackoverflow.com/q/13041525/637094) :
 
 ```bash
 #!/bin/bash
@@ -44,9 +44,9 @@ ninja (1.1.0 < 1.3.4)
 ```
  >  Ninjas 1.3.4 are better than 1.1.0, no doubt!
 
- Upgrade `ninja` by typing `brew upgrade ninja`
+Upgrade `ninja` by typing `brew upgrade ninja`
 
- ## Don't
+## Don't
  
  * Run `brew upgrade`, alone without parameters it will upgrade all your kegs!
 
