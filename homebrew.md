@@ -2,10 +2,9 @@
 
 * An Intel CPU
 * OS X 10.5 or higher
-* [Xcode](http://itunes.apple.com/us/app/xcode/id497799835) (~1.5 GB)
-* or [Command Line Tools for Xcode](https://developer.apple.com/downloads) (~100 MB)
+* [Xcode](http://itunes.apple.com/us/app/xcode/id497799835) (~1.5 GB) or [Command Line Tools for Xcode](https://developer.apple.com/downloads) (~100 MB). Using Command Line Tools for Xcode requires:
   * `sudo xcode-select -switch /usr/bin` (http://stackoverflow.com/a/11729126/637094)
-  * Replace `/usr/bin/xcrun` with (http://stackoverflow.com/q/13041525/637094) :
+  * Replace `/usr/bin/xcrun` with (http://stackoverflow.com/q/13041525/637094):
 
 ```bash
 #!/bin/bash
