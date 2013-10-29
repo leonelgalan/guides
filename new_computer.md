@@ -65,6 +65,7 @@ brew cask install sublime-text-3
 ;: Set `subl` command line
 mkdir ~/bin
 ln -s ~/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
+;: Install Package Control https://sublime.wbond.net/installation#st3
 brew cask install dropbox
 brew cask install github
 brew cask install google-chrome
