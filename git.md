@@ -51,4 +51,4 @@ git push origin master
 
 > TODO
 
-
+[![Analytics](https://ga-beacon.appspot.com/UA-49118238-1/leonelgalan/guides/git.md?pixel)](https://github.com/igrigorik/ga-beacon)

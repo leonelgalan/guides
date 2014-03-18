@@ -28,7 +28,7 @@ rvm install 2.0.0-p247
 
 ## Troubleshooting
 ### .ruby-version ~~and .ruby-gemset~~ instead of .rvmrc
-Recently the use of `.ruby-version` and `.ruby-gemset` is preferred. Using a `.rvmrc` will display a warning. 
+Recently the use of `.ruby-version` and `.ruby-gemset` is preferred. Using a `.rvmrc` will display a warning.
 
 Read more about this in [wayneeseguin/rvm#1517](https://github.com/wayneeseguin/rvm/issues/1517).
 
@@ -45,3 +45,5 @@ ruby-app
 
 ### Manually mark a .rvmrc file as trusted
 `cd` inside the directory and run `rvm rvmrc trust`. This is useful when a .rvmrc was marked as untrusted previously and RVM remember this decision, so no prompt is shown afterwards.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-49118238-1/leonelgalan/guides/rvm.md?pixel)](https://github.com/igrigorik/ga-beacon)

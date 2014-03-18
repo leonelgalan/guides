@@ -46,6 +46,7 @@ ninja (1.1.0 < 1.3.4)
 Upgrade `ninja` by typing `brew upgrade ninja`
 
 ## Don't
- 
+
  * Run `brew upgrade`, alone without parameters it will upgrade all your kegs!
 
+[![Analytics](https://ga-beacon.appspot.com/UA-49118238-1/leonelgalan/guides/homebrew.md?pixel)](https://github.com/igrigorik/ga-beacon)

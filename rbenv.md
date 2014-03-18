@@ -51,3 +51,5 @@ cd project_name
 
 rbenv local 2.0.0-p247
 ```
+
+[![Analytics](https://ga-beacon.appspot.com/UA-49118238-1/leonelgalan/guides/rbenv.md?pixel)](https://github.com/igrigorik/ga-beacon)

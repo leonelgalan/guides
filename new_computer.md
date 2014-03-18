@@ -18,14 +18,14 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ;: Install rbenv
 brew install rbenv
 ;: Add rbenv initialization to .zshrc
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi' >> ~/.zshrc 
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi' >> ~/.zshrc
 source ~/.zshrc
 ;: Install ruby-build
 brew install ruby-build
 ;: Install Ruby 2.0.0 and Update gems
 rbenv install 2.0.0-p247
-rbenv global 2.0.0-p247 
-rbenv shell 2.0.0-p247 
+rbenv global 2.0.0-p247
+rbenv shell 2.0.0-p247
 gem update --system
 
 ;: Update Git
@@ -90,3 +90,5 @@ brew install imagemagick
 brew install postgres
 initdb /usr/local/var/postgres -E utf8
 ```
+
+[![Analytics](https://ga-beacon.appspot.com/UA-49118238-1/leonelgalan/guides/new_computer.md?pixel)](https://github.com/igrigorik/ga-beacon)

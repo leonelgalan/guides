@@ -15,3 +15,4 @@ Install gems faster!
 gem: --no-ri --no-rdoc
 ```
 
+[![Analytics](https://ga-beacon.appspot.com/UA-49118238-1/leonelgalan/guides/dot-files.md?pixel)](https://github.com/igrigorik/ga-beacon)
